@@ -1,3 +1,5 @@
+由于所使用的工具链和和课程视频不一致，导致rv32ima架构无法正常编译，第四节内容使用rv64完成
+
 ```sh
 paran3xus@ParaN3xusLaptop:~/riscv-operating-system-mooc/exercises/4.1$ ls
 hello.c
