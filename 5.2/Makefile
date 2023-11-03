@@ -2,6 +2,6 @@ EXEC = ans
 
 SRC = ${EXEC}.s
 
-GDBINIT = ../gdbinit
+GDBINIT = ./gdbinit
 
 include ../rule.mk
