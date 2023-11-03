@@ -4,11 +4,11 @@
 	.global	_start		# Define entry _start
 
 _start:
-	li x1, 0x1
-	li x2, 0x2
-	li x4, 0x3
-	add x0,x1,x2
-	sub x3,x0,x4
+	li x6, 0x1
+	li x7, 0x2
+	li x9, 0x3
+	add x5,x6,x7
+	sub x8,x5,x9
 
 stop:
 	j stop			# Infinite loop to stop execution
