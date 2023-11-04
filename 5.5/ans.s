@@ -4,11 +4,15 @@
 	.global	_start		# Define entry _start
 
 _start:
-	li x5, 0x11111111	# a
-	li x6, 0xffffffff	# a
-	mv x7, x5
-	mv x8, x6
+	la x5, _array		# char *x5 = &(array[0])
+	lw x6, 0(x5)		# char x6 = *x5
+	lw x7, 4(x5)		# char x7 = *(x5 + 4)
 
 stop:
 	j stop			# Infinite loop to stop execution
-	.end			# End of file
+
+_array:	
+	.word 0x11111111
+	.word 0xffffffff
+
+.end			# End of file
